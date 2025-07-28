@@ -42,7 +42,12 @@ class CheckSession(Resource):
 
 api.add_resource(CheckSession, '/check_session')
 
-
+class Logout(Resource):
+    def delete(self):
+        session['user_id'] = None
+        return {'message': '204: No Content'}, 204
+    
+api.add_resource(Logout, '/logout')
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
