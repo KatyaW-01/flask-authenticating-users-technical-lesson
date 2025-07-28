@@ -1,4 +1,4 @@
-!/usr/bin/env python3
+#!/usr/bin/env python3
 
 from flask import Flask, make_response, request, session
 from flask_migrate import Migrate

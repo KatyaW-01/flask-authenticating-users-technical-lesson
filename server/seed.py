@@ -1,4 +1,7 @@
 from models import db, User
+from faker import Faker
+from app import app
+
 
 fake = Faker()
 
